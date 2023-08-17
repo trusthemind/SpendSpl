@@ -1,38 +1,117 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: inherit;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input:active, input:focus{
+  outline: none;
+  border:none;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+img {
+  overflow-clip-margin: unset;
+  overflow: auto;
+}
+.header {
+  margin: 0 auto;
+  max-width: 1748px;
+  background-color: #111112;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0 0 21px 21px;
+  height: 81px;
+}
+body {
+  background-color: #0C0C0D;
+}
+.header__el {
+  margin: 0 25px;
+}
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.logo__title {
+  color: #FFF;
+  font-size: 46.586px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 0%; /* 0px */
+  margin-bottom: 5px;
+}
+.header__nav {
+  display: flex;
+  gap: 31px;
+}
+.container {
+  max-width: 1544px;
+  margin: 0 auto;
+}
+.main__title {
+  margin-top: 32px;
+  width: 430px;
+  display: block;
+  color: #FFF;
+  font-family: Source Sans Pro;
+  font-size: 57.857px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 39.632px; /* 39.632px */
+}
+.main__subtitle {
+  width: 660px;
+  display: block;
+  color: #898989;
+  font-family: Source Sans Pro;
+  font-size: 32.544px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 85.5%; /* 27.825px */
+}
+.main__text {
   display: flex;
   flex-direction: column;
+  gap: 27px;
+}
+.form {
+  margin: 27px 0 23px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.form__el {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 0 23px 0 23px;
+  gap: 22px;
+  width: 437px;
+  height: 73px;
+  border: 1.808px solid #5F5F5F;
+  border-radius: 10px;
 }
+.form__subtitle {
+  color: #5F5F5F; 
 
-.App-link {
-  color: #61dafb;
+  font-size: 26.376px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 78%; /* 20.573px */
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form__el img{
+    width: 38px;
+    height: 42px;
+}
+.form__login {
+    color: #EF6214;
+    font-size: 21.736px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 78%; /* 16.954px */
+}
+.form__links {
+  display: flex;
+  gap: 30px;
 }
