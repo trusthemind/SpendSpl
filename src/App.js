@@ -1,17 +1,28 @@
-
 import './App.css';
-import Left from './components/Main/Left';
-import Main from './components/Main/Main';
-import Header from './components/Header/Header';
+import { createBrowserRouter,  RouterProvider, } from "react-router-dom";
+import Main from "./components/Main/Main";
+import Registr from "./components/Main/Registr/Registr/Registr";
+import Repass from "./components/Main/Registr/Repass/Repass";
+import Name from "./components/Main/Registr/Name/Name";
+import Country from "./components/Main/Registr/Country/Country";
+import state from "./redux/state"
 
 
-function App() {
+
+const Router = createBrowserRouter([{
+    element: <Main state={state.main}/>, path:'/'
+},{
+    element: <Registr state={state.registr}/>, path:'/Registr'
+},{
+    element: <Repass state={state.repass}/>, path:'/Repass'
+},{
+    element: <Name state={state.name}/>, path:'/Name'
+},{
+    element: <Country state={state.сountry}/>, path:'/Country'
+}])
+function App(props) {
   return (
-    <>
-      <Header />
-      <Left />
-      <Main />
-    </>
+    <RouterProvider router={Router}/>
   );
 }
 
