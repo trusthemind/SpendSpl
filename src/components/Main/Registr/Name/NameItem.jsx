@@ -1,6 +1,6 @@
 import Rectangle from "../../../../image/Rectangle.png"
-import {Link} from "react-router-dom";
 import Btn from "../../../Button/Btn";
+import logo from "../../../../image/logo.svg";
 
 const NameItem = ({state}) => {
     return (
@@ -13,6 +13,10 @@ const NameItem = ({state}) => {
                         <Btn value={state.value}  to={state.to} className={state.className} />
                     </div>
                     <img src={Rectangle} alt=""  className="Rectangle"/>
+                    <div className="logo_span">
+                        <img src={logo} alt="#"/>
+                        <span >SpendSplif</span>
+                    </div>
                 </div>
             </div>
         </div>

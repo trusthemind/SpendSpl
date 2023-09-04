@@ -5,7 +5,7 @@ import Btn from "../Button/Btn"
 
 
 const MainItem = ({state}) => {
-    debugger;
+
     return (
         <div className='container'>
             <div className="main">
@@ -30,9 +30,9 @@ const MainItem = ({state}) => {
                         </div>
                     </form>
                     <img src={Rectangle} alt=""  className="Rectangle"/>
-                    <div>
-                        <img src={logo} alt=""  className="logo"/>
-                        <span></span>
+                    <div className="logo_span">
+                        <img src={logo} alt="#"/>
+                        <span >SpendSplif</span>
                     </div>
                 </div>
             </div>

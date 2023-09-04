@@ -1,6 +1,7 @@
 import Rectangle from "../../../../image/Rectangle.png"
 import {Link} from "react-router-dom";
 import Btn from "../../../Button/Btn";
+import logo from "../../../../image/logo.svg";
 
 const RegistrItem = ({state}) => {
     return (
@@ -27,6 +28,10 @@ const RegistrItem = ({state}) => {
                         </div>
                     </form>
                     <img src={Rectangle} alt=""  className="Rectangle"/>
+                    <div className="logo_span">
+                        <img src={logo} alt="#"/>
+                        <span >SpendSplif</span>
+                    </div>
                 </div>
             </div>
         </div>

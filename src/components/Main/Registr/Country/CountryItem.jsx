@@ -1,5 +1,6 @@
 import Rectangle from "../../../../image/Rectangle.png"
 import Btn from "../../../Button/Btn";
+import logo from "../../../../image/logo.svg";
 
 const CountryItem = ({state}) => {
     return (
@@ -13,6 +14,10 @@ const CountryItem = ({state}) => {
 
                     </div>
                     <img src={Rectangle} alt="" className="Rectangle"/>
+                    <div className="logo_span">
+                        <img src={logo} alt="#"/>
+                        <span >SpendSplif</span>
+                    </div>
                 </div>
             </div>
         </div>
