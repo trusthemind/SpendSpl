@@ -20,6 +20,7 @@ const Router = createBrowserRouter([{
 },{
     element: <Country state={state.сountry}/>, path:'/Country'
 }])
+
 function App(props) {
   return (
     <RouterProvider router={Router}/>
@@ -28,3 +29,4 @@ function App(props) {
 
 
 export default App;
+
