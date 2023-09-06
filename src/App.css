@@ -104,17 +104,31 @@ body {
     line-height: normal;
 }
 
-.main_form {
-    max-width: 100vw;
+.main--registration{
+    width: 100%;
     height: 100vh;
-    max-height: 100vh;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-image: url(./image/background.svg);
-    position: relative;
     background-size: cover;
+
+}
+.main_form {
+   z-index: 1000;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+.main_form::after {
+    position: absolute;
+    content: "";
+    width: 1200px;
+    height: 200%;
+    left: -79%;
+    border-radius: 70%;
+    background: radial-gradient(50% 50% at 50% 50%, #000 54.02%, rgba(0, 0, 0, 0.00) 100%);
 }
 
 .form {
@@ -245,6 +259,7 @@ body {
 .Rectangle {
     position: absolute;
     z-index: 0;
+    height: 100%;
 }
 .submit__title {
     color: #FFF;
@@ -322,11 +337,12 @@ body {
 .logo_span {
     display: flex;
     position: absolute;
+    left: 50%;
+    bottom: -194px;
     align-items: center;
-    gap: 30px;
-    bottom: 4%;
-    left: 44%;
-    flex-direction: row;
+    gap: 32px;
+    transform: translateX(-50%);
+    z-index: 1000;
     border-radius: 24px;
     background: #101010;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
@@ -336,7 +352,6 @@ body {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
     padding: 17px 23px;
 }
 

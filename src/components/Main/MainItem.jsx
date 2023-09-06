@@ -8,7 +8,7 @@ const MainItem = ({state}) => {
 
     return (
         <div className='container'>
-            <div className="main">
+            <div className="main main--registration">
                 <div className="main_form">
                     <form action="#" className="form">
                         <div className="form_login">
