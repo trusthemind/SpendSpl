@@ -1,4 +1,3 @@
-import Rectangle from "../../image/Rectangle.png"
 import logo from "../../image/logo.svg"
 import {Link} from "react-router-dom";
 import Btn from "../Button/Btn"
@@ -7,8 +6,7 @@ import Btn from "../Button/Btn"
 const MainItem = ({state}) => {
 
     return (
-        <div className='container'>
-            <div className="main main--registration">
+            <div className="main--registration">
                 <div className="main_form">
                     <form action="#" className="form">
                         <div className="form_login">
@@ -29,15 +27,12 @@ const MainItem = ({state}) => {
                             </div>
                         </div>
                     </form>
-                    <img src={Rectangle} alt=""  className="Rectangle"/>
                     <div className="logo_span">
                         <img src={logo} alt="#"/>
                         <span >SpendSplif</span>
                     </div>
                 </div>
             </div>
-        </div>
-
     );
 }
 export default MainItem;

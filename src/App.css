@@ -94,10 +94,13 @@ body {
     background-color: #090909;
 ;
 }
-
+.container {
+    max-width: 1200px;
+    margin:0 auto;
+}
 ::placeholder {
     color: #FFF;
-    font-family: Google Sans;
+    font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -109,54 +112,53 @@ body {
     height: 100vh;
     background-image: url(./image/background.svg);
     background-size: cover;
-
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 .main_form {
+    width: 468px;
    z-index: 1000;
    display: flex;
    align-items: center;
    justify-content: center;
-    top:50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
+   z-index: 5;
+   background: #101010;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   padding: 55px;
+   border-radius: 40px;
 }
-.main_form::after {
+
+.main--registration::after{
     position: absolute;
     content: "";
     width: 1200px;
-    height: 200%;
-    left: -79%;
+    height: 800px;
+    background: black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     border-radius: 70%;
     background: radial-gradient(50% 50% at 50% 50%, #000 54.02%, rgba(0, 0, 0, 0.00) 100%);
 }
 
-.form {
-    display: flex;
-    flex-direction: column;
-    width: 468px;
-    border-radius: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #101010;
-    color: white;
-    top: 45%;
-    left: 30%;
-    z-index: 1;
-}
 .form_login {
     display: flex;
     align-items: center;
     justify-content: center;
     color: #000;
     text-align: center;
-    font-family: 'Product Sans Medium', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-top: 55px;
+}
+.form--registr {
+    height: 468px;
+    padding: 50px 54px 52px 54px;
 }
 .login_autr {
     display: flex;
@@ -168,7 +170,7 @@ body {
     background-color: #1D1D1D;
     color: #FFF;
     text-align: center;
-    font-family: 'Product Sans Medium', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -184,7 +186,7 @@ body {
     background-color: #1D1D1D;
     color: #FFF;
     text-align: center;
-    font-family: 'Product Sans Medium', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -196,7 +198,7 @@ body {
     background-color: #FFF;
     color: #000;
     text-align: center;
-    font-family: 'Product Sans Medium', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -210,7 +212,7 @@ body {
     padding: 21px 0 16px 19px;
     border-bottom: 1px solid #8D8D8D;
     color: #FFF;
-    font-family: 'Product Sans Medium', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -219,7 +221,7 @@ body {
 
 .form_btn {
     width: 360px;
-    margin: 45px 0 55px;
+    margin: 45px 0 0;
 }
 .button_user {
     background: #181818;
@@ -234,7 +236,7 @@ body {
     border-radius: 0 0 12px 12px;
     padding: 14px 17px 14px 16px;
     color: #FFF;
-    font-family: 'Product Sans Medium', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -242,7 +244,7 @@ body {
 }
 .user__link {
     color: #FFF;
-    font-family: 'Product Sans Medium', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -250,7 +252,7 @@ body {
 }
 .link___el {
     color: #FFF;
-    font-family: 'Product Sans Black', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
@@ -263,7 +265,7 @@ body {
 }
 .submit__title {
     color: #FFF;
-    font-family: 'Product Sans Medium', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -274,58 +276,60 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 468px;
-
-    margin: 0 auto;
-    z-index: 1;
     color: #FFF;
-    background: #101010;
-    border-radius: 40px;
+}
+.reg_name {
+    margin: 48px 0 51px 0;
 }
 .reg_title {
-    width: 357px;
+    width: 374px;
     color: #6E6E6E;
     text-align: center;
-    font-family: Google Sans;
+    font-family: 'Open Sans', sans-serif;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin: 47px 0 41px 0;
+    margin: 20px 0 20px 0;
     
 }
 
 .reg_repass {
-    margin: 0 0 56px 0;
+    margin: 41px 0 61px 0;
 }
+.reg_place {
+    margin: 22px 0 51px 0;
+}
+
 .reg_button {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     width: 360px;
     padding: 13px 0 13px 17px;
-    margin: 56px 0 52px 0;
     border-radius: 0 0 12px 12px;
     background: #1D1D1D;
     color: #FFF;
-    font-family: Google Sans;
+    font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    margin-top: 51px;
 }
 .reg_quest {
+    width: 374px;
     color: #6E6E6E;
     text-align: center;
-    font-family: Google Sans;
-    font-size: 28px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin: 50px 0 48px 0;
+    padding: 32px 0;
 }
-.reg_name {
-    margin: 41px 0 46px;
+.reg_country {
+    padding: 53px 0;
 }
 .logo {
     z-index: 1;
@@ -348,7 +352,7 @@ body {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
     color: #FFF;
     text-align: center;
-    font-family: Google Sans;
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;

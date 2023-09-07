@@ -1,12 +1,10 @@
-import Rectangle from "../../../../image/Rectangle.png"
 import {Link} from "react-router-dom";
 import Btn from "../../../Button/Btn";
 import logo from "../../../../image/logo.svg";
 
 const RegistrItem = ({state}) => {
     return (
-        <div className='container'>
-            <div className="main">
+            <div className="main--registration">
                 <div className="main_form">
                     <form action="#" className="form">
                         <div className="form_login">
@@ -27,13 +25,11 @@ const RegistrItem = ({state}) => {
                             </div>
                         </div>
                     </form>
-                    <img src={Rectangle} alt=""  className="Rectangle"/>
                     <div className="logo_span">
                         <img src={logo} alt="#"/>
                         <span >SpendSplif</span>
                     </div>
                 </div>
-            </div>
         </div>
 
     );
